@@ -1,10 +1,22 @@
-import { useState } from 'react'
 import axios, { Axios } from "axios";
 import logo from './logo.svg';
 import './App.css';
-import Form from 'react-bootstrap/Form';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from "./components/home";
+
 
 function App() {
+
+  return (
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/test" element={<h1>HELLO!!!</h1>} />
+        </Routes>
+      </div>
+    </Router>
+  );
 
   // const [profileData, setProfileData] = useState(null)
 
@@ -51,18 +63,18 @@ function App() {
   //   </div>
   // );
 
-  return (
-    <div style={{
-      display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',
-      backgroundColor: '#D9AFD9', backgroundImage: 'linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%)'
-    }}>
-      <Form>
-        <Form.Group className="mb-3">
-          <Form.Control type="text" placeholder="enter ticker..." />
-        </Form.Group>
-      </Form>
-    </div>
-  );
+  // return (
+  //   <div style={{
+  //     display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',
+  //     backgroundColor: '#D9AFD9', backgroundImage: 'linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%)'
+  //   }}>
+  //     <Form>
+  //       <Form.Group className="mb-3">
+  //         <Form.Control type="text" placeholder="enter ticker..." />
+  //       </Form.Group>
+  //     </Form>
+  //   </div>
+  // );
 }
 
 export default App;
