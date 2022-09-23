@@ -53,22 +53,14 @@ function App() {
 
   return (
     <div style={{
-      'background-color': ` #D9AFD9`,
-      'background-image': `linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%)`,
+      display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',
+      backgroundColor: '#D9AFD9', backgroundImage: 'linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%)'
     }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100%'
-      }}>
-        <Form>
-          <Form.Group className="mb-3">
-            <Form.Control type="text" placeholder="enter ticker..." />
-            <Form.Text className="text-muted" />
-          </Form.Group>
-        </Form>
-      </div>
+      <Form>
+        <Form.Group className="mb-3">
+          <Form.Control type="text" placeholder="enter ticker..." />
+        </Form.Group>
+      </Form>
     </div>
   );
 }
