@@ -1,15 +1,18 @@
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
-function Home() {
-
+function Home(props) {
+    const navigate = useNavigate();
     const [symbol, setSymbol] = useState('');
 
     function stockSubmit(event) {
         console.log(event.target.symbol.value);
-        event.preventDefault();
+        event.preventDefault(); // Prevent page reload
 
         setSymbol(''); // clear all input in the form
+
+        navigate('/test')
     }
 
     return (
