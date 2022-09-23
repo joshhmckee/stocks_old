@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+TODO:
+- Extend background outside of page view for scroll
+- Style button
+- Fix urls
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+npm install
+pip3 install -r requirements.txt
+npm start
+flask run
 
 In the project directory, you can run:
 
@@ -68,9 +73,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
---------------------------------------------------------------------------------------------------------------
-npm install
-pip3 install -r requirements.txt
-npm start
-flask run
